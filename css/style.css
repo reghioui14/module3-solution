@@ -1,34 +1,108 @@
-/* Style général */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-}
-
-/* Section principale */
-.section {
-    background-color: #f4f4f4;
-    height: 1000px;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
 
 /* Navbar */
 .navbar {
-    margin-bottom: 0;
+    background: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Styles pour le menu mobile */
-.navbar-nav {
-    background-color: #ddd;
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    background: #444;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #666;
+}
+
+.dropdown-menu a:hover {
+    background: #555;
+}
+
+/* Show dropdown when active */
+.show {
+    display: block;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+
+/* Menu Section */
+.menu-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu-item {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 30%;
     text-align: center;
 }
 
-.navbar-nav li a {
-    color: black;
-    font-size: 18px;
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .menu-section {
+        flex-wrap: wrap;
+    }
+    .menu-item {
+        width: 48%;
+        margin-bottom: 10px;
+    }
 }
 
-/* Centrer le titre */
-h1 {
-    margin-top: 20px;
-    font-size: 36px;
+@media (max-width: 767px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
 }
 
