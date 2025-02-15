@@ -1,111 +1,31 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
     background-color: #f8f8f8;
 }
 
-/* Navbar */
-.navbar {
-    background: #333;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: flex-end; /* Navbar à droite */
-    align-items: center;
-}
-
-.brand {
-    font-size: 24px;
+.navbar-brand {
     font-weight: bold;
-    margin-right: auto; /* Pour aligner à gauche */
 }
 
-.menu-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
+.navbar-toggle {
+    border-color: #ddd;
 }
 
-/* Dropdown Menu */
-.dropdown-menu {
-    display: none;
-    background: #444;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    top: 60px;
-    left: 0;
+.navbar-nav > li > a {
+    font-size: 16px;
 }
 
-.dropdown-menu a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px solid #666;
-    text-align: center;
-}
-
-.dropdown-menu a:hover {
-    background: #555;
-}
-
-/* Show dropdown when active */
-.show {
-    display: block;
-}
-
-/* Header */
-header {
-    text-align: center;
-    padding: 20px;
-    background: white;
-}
-
-/* Menu Section */
-.menu-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
+/* Menu sections */
 .menu-item {
-    background: #ccc; /* Fond gris */
+    background-color: #e0e0e0;
     padding: 20px;
-    border-radius: 10px;
-    width: 30%;
+    margin: 10px 0;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
 }
 
-/* Responsive Styles */
-@media (max-width: 991px) {
-    .menu-section {
-        flex-wrap: wrap;
-    }
-    .menu-item {
-        width: 48%;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 767px) {
-    .menu-btn {
-        display: block;
-    }
-
-    .menu-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-item {
-        width: 90%;
-    }
-}
 
