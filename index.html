@@ -3,55 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>module3-solution</title>
+    <title>Module 3 Solution</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <span class="brand">Food, LLC</span>
-            <button class="menu-btn" onclick="toggleMenu()">
-                <i class="fa fa-bars"></i>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="#">Food, LLC</a>
         </div>
-    </nav>
-
-    <!-- Mobile Dropdown Menu -->
-    <div class="dropdown-menu" id="dropdownMenu">
-        <a href="#">Chicken</a>
-        <a href="#">Sushi</a>
-        <a href="#">Beef</a>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Chicken</a></li>
+                <li><a href="#">Beef</a></li>
+                <li><a href="#">Sushi</a></li>
+            </ul>
+        </div>
     </div>
+</nav>
 
-    <!-- Main Content -->
-    <header>
-        <h1>Our Menu</h1>
-    </header>
+<!-- Page Title -->
+<div class="container text-center">
+    <h1>Our Menu</h1>
+</div>
 
-    <section class="menu-section">
-        <div class="menu-item">
+<!-- Menu Sections -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12 menu-item">
             <h2>Chicken</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="menu-item">
-            <h2>Sushi</h2>
-            <p>Phasellus viverra nulla ut metus varius laoreet.</p>
-        </div>
-        <div class="menu-item">
+        <div class="col-md-4 col-sm-6 col-xs-12 menu-item">
             <h2>Beef</h2>
-            <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-    </section>
+        <div class="col-md-4 col-xs-12 menu-item">
+            <h2>Sushi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</div>
 
-    <script>
-        function toggleMenu() {
-            document.getElementById("dropdownMenu").classList.toggle("show");
-        }
-    </script>
+<!-- jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
